@@ -1,0 +1,120 @@
+body {
+    background: linear-gradient(90deg, #333, #308);
+}
+
+#nick {
+    font-family: Consolas;
+    position: absolute;
+    width: 18em;
+    height: 2.5em;
+    background: none;
+    border: 2px solid #aaa;
+    color: #aaa;
+    border-radius: 12px;
+    font-size: 1em;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+}
+#questions {
+    font-family: Consolas;
+    position: absolute;
+    width: 40em;
+    height: 8em;
+    background: none;
+    border: 2px solid #aaa;
+    color: #aaa;
+    border-radius: 12px;
+    font-size: 1em;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+}
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+#console {
+    position: absolute;
+    width: 30em;
+    background-color: rgba(0,0,0,.3);
+    max-height: 60%;
+    min-height: 60%;
+    top: 20%;
+    border-radius: 8px;
+    right: 2%;
+}
+#box {
+    font-family: Consolas;
+    font-size: 1em;
+    position: absolute;
+    color: limegreen;
+    width: 95%;
+    max-height: 96%;
+    min-height: 96%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 2%;
+    right: 2%;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0,0,0,.3);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(100,100,100,.5);
+}
+
+#req {
+    font-family: Consolas;
+    position: absolute;
+    width: 10em;
+    height: 3em;
+    background: none;
+    border: 2px solid #aaa;
+    color: #aaa;
+    border-radius: 12px;
+    font-size: 1em;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+}
+#flood {
+    position: absolute;
+    width: 8em;
+    height: 2em;
+    border: 1px #eee solid;
+    cursor: pointer;
+    border-radius: 12px;
+    left: calc(50% - 4em);
+    color: #aaa;
+    text-align: center;
+    font-family: Consolas;
+    font-size: 2em;
+    line-height: 2em;
+    background-color: rgba(0,0,0,.3);
+}
+#nglf {
+    font-family: Consolas;
+    color: #eee;
+    text-shadow: black;
+    transition: .5s all;
+    font-weight: lighter;
+    font-size: 4em;
+    text-align: center;
+}
+#nglf:hover {
+    text-shadow: black 10px 5px;
+}
